@@ -2,7 +2,7 @@
 A html5 javascript phaser.io socket.io multiplayer game.
 
 # Demo
-(snowballfight.asked.io)[snowballfight.asked.io]
+<snowballfight.asked.io>
 
 # Install
 ```
