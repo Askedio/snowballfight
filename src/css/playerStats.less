@@ -1,0 +1,128 @@
+
+#playerStats
+{
+    position: absolute;
+    left: ~"calc(50% - 160px)";
+
+    display: none;
+
+    width: 320px;
+
+    text-align: center;
+    @media screen and (max-width: 440px)
+    {
+        left: 0;
+
+        width: 100%!important;
+    }
+
+
+
+    .teamMode
+    {
+        font-size: 10px;
+
+        position: relative;
+
+        display: none;
+
+        width: 180px;
+        margin: 0 auto;
+
+        border: 1px solid rgba(255,255,255,.2);
+        border-top: none;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        box-shadow: 0 2px 1px 0 rgba(0,0,0,.3);
+        text-shadow: 1px 1px 1px #fff;
+        div
+        {
+            display: inline-block;
+
+            width:  81px;
+
+            text-align: center;
+        }
+
+        #redScore
+        {
+            padding: 2px 4px;
+
+            border-bottom-left-radius: 5px;
+            background-color: rgba(255, 0, 0, .3);
+        }
+
+
+        #blueScore
+        {
+            padding: 2px 4px;
+
+            border-bottom-right-radius: 5px;
+            background-color: rgba(0, 0, 255, .3);
+        }
+    }
+
+
+   ul
+  {
+      display: inline-block;
+
+      height: 42px;
+
+      list-style: none;
+
+      border: 2px solid rgba(255,255,255,.2);
+      border-top: 0;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      background-color: rgba(255, 255, 255, .4);
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+
+      @media screen and (max-width: 440px)
+      {
+          width: 100%!important;
+
+          border-radius: 0;
+      }
+
+
+      li
+      {
+          font-size: 11px;
+
+          display: inline-block;
+
+          margin: 2px 10px;
+
+          text-align: center;
+
+          text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+
+          img
+          {
+              cursor: pointer;
+          }
+      }
+      li > span
+      {
+          font-size: 14px;
+          font-weight: bold;
+
+          display: block;
+
+          &#health
+          {
+              font-size: 17px;
+
+              color: green;
+          }
+
+          &#deaths
+          {
+              font-size: 17px;
+
+              color: darkred;
+          }
+      }
+    }
+  }

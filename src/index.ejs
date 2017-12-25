@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Snowball Fight - A Multiplayer HTML5 Game</title>
+  <script src="/assets/scripts/phaser.min.js"></script>
+</head>
+
+<body oncontextmenu="return false;">
+  <div id="playerStats">
+    <ul>
+      <li title="suicide" onclick="app.player.suicide()">
+        <img src="/assets/images/26.png" height="32" width="32">
+      </li>
+
+      <li>
+        score
+        <span id="score">0</span>
+      </li>
+
+      <li>
+        health
+        <span id="health">0</span>
+      </li>
+
+      <li>
+        deaths
+        <span id="deaths">0</span>
+      </li>
+
+      <li>
+        kills
+        <span id="kills">0</span>
+      </li>
+
+      <li title="scores" onclick="app.toggleScoreBoard()">
+        <img src="/assets/images/99.png" height="32" width="32">
+      </li>
+    </ul>
+
+    <div class="teamMode">
+      <div id="redScore">0</div>
+      <div id="blueScore">0</div>
+    </div>
+  </div>
+
+
+  <div id="spawnScreen">
+    <div class="spawn">
+      <div id="killedBy"></div>
+
+      <div id="gameModeTitle"></div>
+      <div id="gameModeMessage"></div>
+
+      <div id="playContainer">
+        <button id="playbutton">play</button>
+        <input type="text" id="playerName" placeholder="name" maxlength="10">
+        <input type="text" id="playerRoom" placeholder="room" maxlength="32">
+
+        <div id="skins">
+          <ul id="skinlist">
+            <li class="active"><img id="playera" src="assets/images/skins/playersa_01.png"></li>
+            <li><img id="playerb" src="assets/images/skins/playersb_01.png"></li>
+            <li><img id="playerc" src="assets/images/skins/playersc_01.png"></li>
+            <li><img id="playerd" src="assets/images/skins/playersd_01.png"></li>
+          </ul>
+        </div>
+
+        <div id="help">
+          <div id="helpdesktop">mouse to move + clicks to shoot<br>w/a/d/arrows + space/f/r/q</div>
+          <div id="helpmobile">tap to move + double to shoot</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="gameModeChange">
+    <div id="pendingGameModeChange">next round starting <span id="timeRemaining"></span></div>
+  </div>
+
+  <div id="loading">
+    preparing the field for battle...
+  </div>
+
+  <div id="scoreBoard">
+    <ul id="scoreList"></ul>
+  </div>
+
+  <div id="playerUpdate">
+    <ul id="playerUpdates"></ul>
+  </div>
+
+  <div id="chat">
+    <ul id="chatBox"></ul>
+    <input id="chatSend" type="text">
+  </div>
+
+  <div id="content"></div>
+</body>
+
+</html>

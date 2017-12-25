@@ -1,0 +1,105 @@
+#scoreBoard
+{
+    font-size: 11px;
+    line-height: 12px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    overflow: hidden;
+
+    max-width: 160px;
+    padding-top: 4px;
+
+    color: rgba(0,0,0,.8);
+    border: 1px solid rgba(255,255,255,.2);
+    border-top: 0;
+    border-right: 0;
+    border-bottom-left-radius: 10px;
+    background-color: rgba(255, 255, 255, .3);
+
+    &:empty{
+      display: none
+    }
+
+
+    @media screen and (max-width: 680px)
+    {
+        top: 44px;
+        left: ~"calc(50% - 80px)";
+
+        display: none;
+
+        width: 160px;
+
+        border-bottom-right-radius: 10px;
+    }
+
+
+
+    ul
+    {
+        padding: 0 10px 4px 4px;
+        &:empty{
+          display: none
+        }
+        list-style: none;
+
+        li
+        {
+            display: block;
+
+            width: 100%;
+            padding: 4px 0;
+            padding: 2px 0;
+
+
+            div
+            {
+                display: inline-block;
+                overflow: hidden;
+
+                min-width: 20px;
+                padding: 0 4px;
+
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            .player
+            {
+                width: 90px;
+
+                &.alive
+                {
+                    //  color: green;
+                }
+
+                &.dead
+                {
+                    color: darkred;
+                }
+
+                &.red
+                {
+                    border-radius: 4px;
+                    background-color: rgba(255, 0, 0, .2);
+                }
+
+
+                &.blue
+                {
+                    border-radius: 4px;
+                    background-color: rgba(0, 0, 255, .2);
+                }
+            }
+
+            .score
+            {
+                text-align: right;
+                display: inline-block;
+            }
+        }
+    }
+}

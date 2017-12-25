@@ -1,0 +1,46 @@
+
+#chat {
+  position: absolute;
+  bottom:0;
+  left: 0;
+  padding: 0 10px;
+  z-index: 4;
+
+  @media screen and (max-width: 480px)
+  {
+    display: none;
+  }
+
+  #chatBox {
+    width: 150px;
+    padding: 4px 5px;
+    max-height: 45px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.1);
+    background-color: rgba(255,255,255,.3);
+    border-radius: 4px;
+    list-style: none;
+    font-size: 11px;
+    line-height: 12px;
+    color: rgba(0,0,0,.9);
+
+    &:empty{
+      display: none
+    }
+
+    i{ font-weight: bold;}
+
+  }
+
+  #chatSend {
+    width: 150px;
+    background-color: rgba(255,255,255,.4);
+    margin-top: 4px;
+    border: 1px solid rgba(255,255,255,.1);
+    color: rgba(0,0,0,.9);
+
+    &:active, &:hover{
+      background-color: rgba(255,255,255,.2);
+    }
+  }
+}
