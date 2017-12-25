@@ -1,6 +1,18 @@
-# Multiplayer Snow Ball Fighting Game
+# HTML5 Multiplayer Snowball Fighting Game
 A html5 javascript phaser.io socket.io multiplayer game.
 
+# Install
+```
+npm install
+```
+
+# Run
+``` 
+npm run server
+npm run serve
+```
+
+Play at http://localhost:9999
 
 # Rooms
 ```
@@ -20,3 +32,6 @@ A html5 javascript phaser.io socket.io multiplayer game.
       return 'treeland'
     }
 ```
+
+# Emojis
+Use emjois all over, it was 2016 when I wrote this.
