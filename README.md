@@ -35,3 +35,7 @@ Play at http://localhost:9999
 
 # Emojis
 Use emjois all over, it was 2016 when I wrote this.
+
+# Issues
+It's laggy. Locally not to bad, on a server it gets worse. I tried to implement the valve style multiplayer system, but failed. I lost interest after multiple attempts. I did find ColyseusJS and some other tools to help with timeline but winter was already over.
+
